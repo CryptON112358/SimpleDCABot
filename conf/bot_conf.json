@@ -1,0 +1,18 @@
+{
+    "exchange": "coinbase",
+    "crypto": "BTC",
+    "fiat": "EUR",
+    "amount": 10.0,
+    "interval": 86400,
+    "start": 10,
+    "logfile": "./log.txt",
+    "exchange_api": {
+        "SECRET_KEY": "SOME_SECRET_KEY_DFDFDFASDFSDFSDFSDFSDF",
+        "API_KEY": "API_KEY_VFVDFGEDFGDFGDFG",
+        "PASSPHRASE": "PASSPHRASE_GRTEGEGRE"
+    },
+    "telegram_api": {
+        "chat_id": "CHAT_ID_516+1464",
+        "TOKEN": "TOKEN_5sdf61sd6f51"
+    }
+}
