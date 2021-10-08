@@ -61,6 +61,10 @@ The JSON configuration contains all the necessary parameters.
 "telegram_api": Telegram token and chat id for Telegram bot. If the Telegram API is missing, it will not be used, and the bot will only log to the selected file and the terminal. 
 ```
 
+## API requirements (Coinbase Pro)
+ - View
+ - Trade
+
 ## Telegram bot
 Instructions on how to create your own Telegram bot and get its token can be found here: 
 https://core.telegram.org/bots#botfather
