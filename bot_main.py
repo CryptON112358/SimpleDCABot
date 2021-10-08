@@ -73,7 +73,7 @@ class SimpleDCABot:
 
         if setting['exchange'].lower() == 'coinbase':
             self.ex = CoinbaseAPI(setting['exchange_api']['API_KEY'], setting['exchange_api']
-                                  ['SECRET_KEY'], setting['exchange_api']['PASSPHRASE'])
+                                  ['API_SECRET'], setting['exchange_api']['API_PASSPHRASE'])
         elif setting['exchange'].lower() == 'kraken':
             raise NotImplemented(f'{setting["exchange"]} is not supported.')
         else:
@@ -142,6 +142,13 @@ class SimpleDCABot:
 
         th = threading.Thread(target=self._run_dca_loop)
         th.start()
+
+        self._communicate('Checking API settings...')
+        fiat_res, fiat_balance = self.ex.check_balance(self.fiat)
+        if fiat_res:
+            self._communicate(f'Your {self.fiat} balance is {fiat_balance}.')
+        else:
+            self._communicate(f'ERROR in API: {fiat_balance}.')
 
         if self.tb:
             self.tb.infinity_polling()

@@ -7,9 +7,9 @@
     "start": 10,
     "logfile": "./log.txt",
     "exchange_api": {
-        "SECRET_KEY": "SOME_SECRET_KEY_DFDFDFASDFSDFSDFSDFSDF",
+        "API_SECRET": "SOME_SECRET_KEY_DFDFDFASDFSDFSDFSDFSDF",
         "API_KEY": "API_KEY_VFVDFGEDFGDFGDFG",
-        "PASSPHRASE": "PASSPHRASE_GRTEGEGRE"
+        "API_PASSPHRASE": "PASSPHRASE_GRTEGEGRE"
     },
     "telegram_api": {
         "chat_id": "CHAT_ID_516+1464",

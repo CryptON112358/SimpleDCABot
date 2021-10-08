@@ -37,9 +37,9 @@ The JSON configuration contains all the necessary parameters.
     "start": 10,
     "logfile": "./log.txt",
     "exchange_api": {
-        "SECRET_KEY": "SOME_SECRET_KEY_DFDFDFASDFSDFSDFSDFSDF",
+        "API_SECRET": "SOME_SECRET_KEY_DFDFDFASDFSDFSDFSDFSDF",
         "API_KEY": "API_KEY_VFVDFGEDFGDFGDFG",
-        "PASSPHRASE": "PASSPHRASE_GRTEGEGRE"
+        "API_PASSPHRASE": "PASSPHRASE_GRTEGEGRE"
     },
     "telegram_api": {
         "chat_id": "CHAT_ID_516+1464",
@@ -64,6 +64,17 @@ The JSON configuration contains all the necessary parameters.
 ## API requirements (Coinbase Pro)
  - View
  - Trade
+
+### How to set a new CoinbasePro API (credits: seCoin3363se)
+1. Add an API key
+2. Check permitions View and Trade (do not give Transfer permission!)
+3. Set a good and long passphrase is you want to. Fill the passphrase in the config.json
+4. Set your IP in the white list (security increase)
+5. Verify the new API key
+6. Fill generated API-SECRET in the config.json as SECRET-KEY
+7. Click done (you will not see the API-SECRET anymore)
+8. Fill the generated API key (hash like string in the API list) as API-KEY
+
 
 ## Telegram bot
 Instructions on how to create your own Telegram bot and get its token can be found here: 
